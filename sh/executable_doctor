@@ -74,7 +74,7 @@ is_fish_installed() {
 }
 
 is_fish_my_shell() {
-    [ $(grep $USER /etc/passwd | cut -d : -f 7) = $FISH_LOCATION ] 
+    [ $(grep "^$(whoami):" /etc/passwd | cut -d : -f 7) = $FISH_LOCATION ]
 }
 
 is_nvim_installed() {
