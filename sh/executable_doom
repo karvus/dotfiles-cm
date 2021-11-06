@@ -1,0 +1,16 @@
+#!/usr/bin/env zsh
+
+default_doomdir=~/emacs/doom.d/ke
+
+if [ "$DOOMIDR" = "" ] ; then
+	echo -n "DOOMDIR is not set, use ${default_doomdir} (y/N)? "
+	read -q ans
+	echo
+	if [ "$ans" = "n" ] ; then
+		exit 1
+	fi
+	export DOOMDIR=$default_doomdir
+fi
+
+~/emacs/emacs.d/ke-doom/bin/doom $*
+
