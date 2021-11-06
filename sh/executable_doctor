@@ -61,6 +61,14 @@ error() {
     exit 1
 }
 
+# warn <message>
+warn() {
+    echo "DOC-WARN: $*"
+    exit 1
+}
+
+
+
 is_ssh_keys_installed() {
     if [ -d ~/.ssh ]  && [ -e ~/.ssh/id_rsa ] && [ -e ~/.ssh/id_rsa.pub ] ; then
         return 0
@@ -154,8 +162,12 @@ fi
 if is_fish_my_shell ; then
     info "fish is my shell"
 else
-    info "fish is not my shell, changing"
-    chsh -s /usr/bin/fish
+    if command -v chsh ; then
+        info "fish is not my shell, rectifying"
+        chsh -s /usr/bin/fish
+    else
+        warn "fish is not my shell, and can't find chsh to rectify"
+    fi
 fi
 
 if is_nvim_installed ; then
