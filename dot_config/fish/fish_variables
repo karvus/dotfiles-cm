@@ -3,13 +3,21 @@
 SETUVAR --export DOOMDIR:/home/thomas/\x2edoom\x2ed
 SETUVAR --export EDITOR:nvim
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_cdcm:cd\x20\x28chezmoi\x20source\x2dpath\x29
 SETUVAR _fish_abbr_cm:chezmoi
+SETUVAR _fish_abbr_cma:chezmoi\x20apply
+SETUVAR _fish_abbr_cmcd:cd\x20\x28chezmoi\x20source\x2dpath\x29
+SETUVAR _fish_abbr_cmd:chezmoi\x20diff
+SETUVAR _fish_abbr_cmr:chezmoi\x20re\x2dadd
+SETUVAR _fish_abbr_cms:chezmoi\x20status
+SETUVAR _fish_abbr_ds:dnf\x20search
 SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_jc:journalctl
 SETUVAR _fish_abbr_n:nvim
 SETUVAR _fish_abbr_nv:nvim
 SETUVAR _fish_abbr_pss:pacman\x20\x2d\x2dsync\x20\x2d\x2dsearch
 SETUVAR _fish_abbr_sc:systemctl
+SETUVAR _fish_abbr_sdi:sudo\x20dnf\x20install
 SETUVAR _fish_abbr_sps:sudo\x20pacman\x20\x2dS
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/thomas/\x2econfig/fish/functions/fisher\x2efish\x1e/home/thomas/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher
