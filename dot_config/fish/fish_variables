@@ -4,7 +4,9 @@ SETUVAR --export DOOMDIR:/home/thomas/\x2edoom\x2ed
 SETUVAR --export EDITOR:nvim
 SETUVAR __fish_initialized:3100
 SETUVAR _fish_abbr_cm:chezmoi
+SETUVAR _fish_abbr_gcm:git\x20commit\x20\x2dm
 SETUVAR _fish_abbr_jc:journalctl
+SETUVAR _fish_abbr_n:nvim
 SETUVAR _fish_abbr_nv:nvim
 SETUVAR _fish_abbr_pss:pacman\x20\x2d\x2dsync\x20\x2d\x2dsearch
 SETUVAR _fish_abbr_sc:systemctl
@@ -12,6 +14,7 @@ SETUVAR _fish_abbr_sps:sudo\x20pacman\x20\x2dS
 SETUVAR _fisher_jorgebucaran_2F_fisher_files:/home/thomas/\x2econfig/fish/functions/fisher\x2efish\x1e/home/thomas/\x2econfig/fish/completions/fisher\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/fisher
 SETUVAR base16_theme:\x1d
+SETUVAR cm:/home/thomas/\x2elocal/share/chezmoi
 SETUVAR fish_color_autosuggestion:314549
 SETUVAR fish_color_cancel:\x2dr
 SETUVAR fish_color_command:green
