@@ -144,14 +144,6 @@ else
     info SSH keys already installed
 fi
 
-# if yadm repo origin is https, switch to git
-if yadm remote get-url origin | grep ${REPO_HTTPS} &> /dev/null ; then
-    info "YADM repo is tracking the HTTPS url, changing to git"
-    yadm remote set-url origin ${REPO_GIT}
-else
-    info "YADM repo is tracking the git url"
-fi
-
 if is_fish_installed ; then
     info "fish already installed"
 else
